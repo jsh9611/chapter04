@@ -1,13 +1,14 @@
-package chapter04;
+package colection;
 
 import java.util.Iterator;
-import java.util.List;
-import java.util.Vector;
 
-public class VectorTest2 {
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListTest {
 
 	public static void main(String[] args) {
-		List<String> list = new Vector<>();
+		List<String> list = new LinkedList<>();
 		
 		list.add("둘리");
 		list.add("마이콜");

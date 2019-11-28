@@ -1,4 +1,4 @@
-package chapter04;
+package colection;
 
 import java.util.HashSet;
 import java.util.Iterator;

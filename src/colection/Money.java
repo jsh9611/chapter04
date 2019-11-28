@@ -1,4 +1,4 @@
-package chapter04;
+package colection;
 
 public class Money {
 	private int value;
