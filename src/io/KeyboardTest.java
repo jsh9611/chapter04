@@ -19,8 +19,8 @@ public class KeyboardTest {
 		// 3. 보조스트림02( |char|char|char|char|...|\n -> "charcharcharchar...")
 		br = new BufferedReader(isr);
 		
-			String line = null;
-			while((br.readLine()) != null); {
+		String line = null;
+		while((line = br.readLine()) != null) {
 				if("exit".equals(line)) {
 					break;
 				}
@@ -31,7 +31,9 @@ public class KeyboardTest {
 			System.out.println("Error: " + e);
 		}  finally {
 			try {
-				br.close();
+				if(br != null) {
+					br.close();
+				}
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
